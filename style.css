@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 10px;
+  text-align: center;
+}
+
+.Age {
+  margin-top: 300px;
+}
+
+.date-box {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  gap: 10px;
+}
+
+.paragraph {
+  padding-right: 185px;
+}
+
+.calendar {
+  padding-left: 10px;
+  width: 350px;
+  height: 40px;
+}
+
+.calculate {
+  width: 350px;
+  height: 40px;
+  background-color: #525252;
+  color: white;
+  border-radius: 5px;
+  font-size: large;
+  border: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+button:hover {
+  background-color: gray;
+  cursor: pointer; 
+}
+
+.calculate:active {
+  background-color: #A9A9A9;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.result {
+  margin-top: 15px;
+  font-size: 1.2em;
+  color: #333;
+  font-weight: 600;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.result:not(:empty) {
+  visibility: visible;
+  opacity: 1;
+}
